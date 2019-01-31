@@ -1,14 +1,18 @@
-package com.st.order.pojo;
+package com.st.order.dataobject;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
+@Entity
 public class OrderMaster {
 
     /** 订单id. */
+    @Id
     private String orderId;
 
     /** 买家名字. */

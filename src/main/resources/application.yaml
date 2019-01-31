@@ -1,6 +1,13 @@
 spring:
   application:
     name: order
+  datasource:
+    url: jdbc:mysql://www.erlie.cc:3306/SpringCloud_Sell?characterEncoding=utf8
+    username: root
+    password: peng2014
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
 eureka:
   client:
     service-url:
